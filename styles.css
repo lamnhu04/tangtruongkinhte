@@ -5,62 +5,157 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background: #fdfdfd;
-    color: #222;
+    font-family: 'Montserrat', sans-serif;
+    background: #0f0f0f;
+    color: #fff;
+    line-height: 1.6;
 }
 
+/* ===== HEADER ===== */
 header {
-    background: #222;
-    padding: 15px;
-    text-align: center;
-}
-
-header nav a {
-    color: #fff;
-    margin: 0 15px;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.section-full {
-    padding: 60px 20px;
-    text-align: center;
-}
-
-.cards {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0,0,0,0.8);
     display: flex;
-    gap: 20px;
-    justify-content: center;
-    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    z-index: 1000;
 }
 
-.card {
-    background: #eee;
-    padding: 20px;
-    width: 200px;
-    border-radius: 8px;
+.logo {
+    font-weight: 700;
+    font-size: 20px;
 }
 
-form input, form textarea {
-    width: 90%;
-    padding: 10px;
-    margin: 10px 0;
-    border-radius: 6px;
-    border: 1px solid #aaa;
-}
-
-button {
-    padding: 10px 25px;
-    background: #222;
+nav a {
     color: #fff;
+    margin-left: 25px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: #00ffd5;
+}
+
+/* ===== HERO ===== */
+.hero {
+    height: 100vh;
+    background: linear-gradient(120deg, #000, #1a1a1a);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 48px;
+}
+
+.hero span {
+    color: #00ffd5;
+}
+
+.hero p {
+    margin: 20px 0;
+    opacity: 0.8;
+}
+
+.btn {
+    padding: 12px 30px;
+    background: #00ffd5;
+    color: #000;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: 600;
+}
+
+/* ===== ABOUT ===== */
+.about {
+    padding: 100px 15%;
+    text-align: center;
+}
+
+.about h2 {
+    margin-bottom: 20px;
+}
+
+/* ===== PROJECTS ===== */
+.projects {
+    padding: 100px 10%;
+}
+
+.projects h2 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.project-card {
+    background: #1a1a1a;
+    padding: 30px;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    background: #222;
+}
+
+/* ===== CONTACT ===== */
+.contact {
+    padding: 100px 15%;
+    text-align: center;
+}
+
+.contact-box {
+    max-width: 500px;
+    margin: auto;
+}
+
+.contact-box input,
+.contact-box textarea {
+    width: 100%;
+    margin: 10px 0;
+    padding: 12px;
+    border-radius: 8px;
     border: none;
+}
+
+.contact-box button {
+    width: 100%;
+    padding: 12px;
+    background: #00ffd5;
+    border: none;
+    border-radius: 30px;
+    font-weight: bold;
     cursor: pointer;
 }
 
+/* ===== FOOTER ===== */
 footer {
-    background: #222;
-    color: #fff;
-    padding: 10px;
-    font-size: 14px;
+    text-align: center;
+    padding: 20px;
+    background: #000;
+    opacity: 0.7;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    header {
+        padding: 15px 20px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
 }
