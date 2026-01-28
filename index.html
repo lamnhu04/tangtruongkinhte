@@ -2,52 +2,88 @@
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
+    <title>KTVM Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trang Web Tương Tự KTVM</title>
+
+    <!-- CSS -->
     <link rel="stylesheet" href="styles.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<header id="header">
+<!-- ===== NAVBAR ===== -->
+<header>
+    <div class="logo">KTVM</div>
     <nav>
-        <a href="#home">Trang Chủ</a>
-        <a href="#about">Giới Thiệu</a>
-        <a href="#projects">Dự Án</a>
-        <a href="#contact">Liên Hệ</a>
+        <a href="#home">Trang chủ</a>
+        <a href="#about">Giới thiệu</a>
+        <a href="#projects">Dự án</a>
+        <a href="#contact">Liên hệ</a>
     </nav>
 </header>
 
-<section id="home" class="section-full">
-    <h1>Chào Mừng Đến Với Trang Web Của Tôi</h1>
-    <p>Đây là trang web demo giống KTVM</p>
+<!-- ===== HERO ===== -->
+<section id="home" class="hero">
+    <h1>Xin chào, tôi là <span>KTVM</span></h1>
+    <p>Portfolio cá nhân & các dự án sáng tạo</p>
+    <a href="#projects" class="btn">Xem dự án</a>
 </section>
 
-<section id="about" class="section-full">
-    <h2>Giới Thiệu</h2>
-    <p>Một đoạn giới thiệu bản thân hoặc nội dung bạn muốn.</p>
+<!-- ===== ABOUT ===== -->
+<section id="about" class="about">
+    <h2>Giới thiệu</h2>
+    <p>
+        (nội dung) <br>
+        (nội dung) <br>
+        (nội dung)
+    </p>
 </section>
 
-<section id="projects" class="section-full">
-    <h2>Dự Án</h2>
-    <div class="cards">
-        <div class="card">Dự án 1</div>
-        <div class="card">Dự án 2</div>
-        <div class="card">Dự án 3</div>
+<!-- ===== PROJECTS ===== -->
+<section id="projects" class="projects">
+    <h2>Dự án</h2>
+
+    <div class="project-grid">
+        <div class="project-card">
+            <h3>Dự án 01</h3>
+            <p>(nội dung)</p>
+        </div>
+
+        <div class="project-card">
+            <h3>Dự án 02</h3>
+            <p>(nội dung)</p>
+        </div>
+
+        <div class="project-card">
+            <h3>Dự án 03</h3>
+            <p>(nội dung)</p>
+        </div>
+
+        <div class="project-card">
+            <h3>Dự án 04</h3>
+            <p>(nội dung)</p>
+        </div>
     </div>
 </section>
 
-<section id="contact" class="section-full">
-    <h2>Liên Hệ</h2>
-    <form>
+<!-- ===== CONTACT ===== -->
+<section id="contact" class="contact">
+    <h2>Liên hệ</h2>
+    <p>(nội dung)</p>
+
+    <div class="contact-box">
         <input type="text" placeholder="Tên của bạn">
         <input type="email" placeholder="Email">
-        <textarea placeholder="Tin nhắn"></textarea>
+        <textarea placeholder="Nội dung"></textarea>
         <button>Gửi</button>
-    </form>
+    </div>
 </section>
 
+<!-- ===== FOOTER ===== -->
 <footer>
-    © 2026 — Trang web tạo bởi bạn!
+    <p>© 2026 KTVM. All rights reserved.</p>
 </footer>
 
 <script src="script.js"></script>
