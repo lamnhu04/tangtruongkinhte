@@ -5,10 +5,31 @@
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
-    background: #0f0f0f;
+    font-family: 'Poppins', sans-serif;
+    background: #0b0b0b;
     color: #fff;
-    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* ===== LOADER ===== */
+#loader {
+    position: fixed;
+    inset: 0;
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+#loader span {
+    font-size: 32px;
+    letter-spacing: 5px;
+    animation: blink 1.2s infinite;
+}
+
+@keyframes blink {
+    50% { opacity: 0.3; }
 }
 
 /* ===== HEADER ===== */
@@ -16,146 +37,88 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
-    background: rgba(0,0,0,0.8);
+    padding: 20px 60px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 15px 50px;
     z-index: 1000;
-}
-
-.logo {
-    font-weight: 700;
-    font-size: 20px;
+    background: rgba(0,0,0,0.4);
+    backdrop-filter: blur(8px);
 }
 
 nav a {
     color: #fff;
     margin-left: 25px;
     text-decoration: none;
-    font-weight: 500;
+    opacity: 0.7;
 }
 
 nav a:hover {
-    color: #00ffd5;
+    opacity: 1;
 }
 
-/* ===== HERO ===== */
-.hero {
-    height: 100vh;
-    background: linear-gradient(120deg, #000, #1a1a1a);
+/* ===== SECTIONS ===== */
+.section {
+    min-height: 100vh;
+    padding: 120px 15%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.home {
     align-items: center;
     text-align: center;
 }
 
-.hero h1 {
-    font-size: 48px;
+.home h1 {
+    font-size: 80px;
+    letter-spacing: 8px;
 }
 
-.hero span {
-    color: #00ffd5;
-}
-
-.hero p {
-    margin: 20px 0;
-    opacity: 0.8;
-}
-
-.btn {
-    padding: 12px 30px;
-    background: #00ffd5;
-    color: #000;
-    text-decoration: none;
-    border-radius: 30px;
-    font-weight: 600;
-}
-
-/* ===== ABOUT ===== */
-.about {
-    padding: 100px 15%;
-    text-align: center;
-}
-
-.about h2 {
-    margin-bottom: 20px;
-}
-
-/* ===== PROJECTS ===== */
-.projects {
-    padding: 100px 10%;
-}
-
-.projects h2 {
-    text-align: center;
-    margin-bottom: 50px;
-}
-
-.project-grid {
+/* ===== PROJECT ===== */
+.project-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
     gap: 30px;
 }
 
-.project-card {
-    background: #1a1a1a;
+.project {
+    background: #141414;
     padding: 30px;
-    border-radius: 15px;
-    transition: 0.3s;
+    border-radius: 12px;
+    transition: 0.4s;
 }
 
-.project-card:hover {
+.project:hover {
     transform: translateY(-10px);
-    background: #222;
+    background: #1f1f1f;
 }
 
-/* ===== CONTACT ===== */
-.contact {
-    padding: 100px 15%;
-    text-align: center;
+/* ===== REVEAL ===== */
+.reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: 1s;
 }
 
-.contact-box {
-    max-width: 500px;
-    margin: auto;
-}
-
-.contact-box input,
-.contact-box textarea {
-    width: 100%;
-    margin: 10px 0;
-    padding: 12px;
-    border-radius: 8px;
-    border: none;
-}
-
-.contact-box button {
-    width: 100%;
-    padding: 12px;
-    background: #00ffd5;
-    border: none;
-    border-radius: 30px;
-    font-weight: bold;
-    cursor: pointer;
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 /* ===== FOOTER ===== */
 footer {
     text-align: center;
-    padding: 20px;
-    background: #000;
-    opacity: 0.7;
+    padding: 30px;
+    opacity: 0.5;
 }
 
-/* ===== RESPONSIVE ===== */
-@media (max-width: 768px) {
-    header {
-        padding: 15px 20px;
+/* ===== MOBILE ===== */
+@media(max-width:768px){
+    .home h1 {
+        font-size: 48px;
     }
-
-    .hero h1 {
-        font-size: 36px;
+    header {
+        padding: 20px;
     }
 }
