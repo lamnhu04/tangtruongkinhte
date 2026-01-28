@@ -129,3 +129,13 @@ footer {
         font-size: 46px;
     }
 }
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 25px;
+    border-radius: 30px;
+    background: #00ffd5;
+    color: #000;
+    text-decoration: none;
+    font-weight: 600;
+}
