@@ -1,4 +1,4 @@
-// LOADER
+// TẮT LOADER
 window.addEventListener("load", () => {
     document.getElementById("loader").style.display = "none";
 });
@@ -6,8 +6,7 @@ window.addEventListener("load", () => {
 // SCROLL REVEAL
 function reveal() {
     document.querySelectorAll(".reveal").forEach(el => {
-        let top = el.getBoundingClientRect().top;
-        if (top < window.innerHeight - 100) {
+        if (el.getBoundingClientRect().top < window.innerHeight - 100) {
             el.classList.add("active");
         }
     });
@@ -25,9 +24,9 @@ document.querySelectorAll("nav a").forEach(link => {
 });
 
 // TYPING EFFECT
-const text = "(nội dung)";
-let i = 0;
 const typing = document.querySelector(".typing");
+const text = "NỘI DUNG";
+let i = 0;
 
 function type() {
     if (i < text.length) {
