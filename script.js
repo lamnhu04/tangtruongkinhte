@@ -25,7 +25,7 @@ document.querySelectorAll("nav a").forEach(link => {
 
 // TYPING EFFECT
 const typing = document.querySelector(".typing");
-const text = "NỘI DUNG";
+const text = "NHÓM 05 - TĂNG TRƯỞNG KINH TẾ NỘI DUNG";
 let i = 0;
 
 function type() {
