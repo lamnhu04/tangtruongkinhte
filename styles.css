@@ -495,3 +495,33 @@ nav ul li a:hover {
     color: #2a9d8f;
     margin-left: 20px;
 }
+/* ===== KHUNG CHO CONTENT-BLOCK ===== */
+.content-block {
+    background: #ffffff; /* nền trắng */
+    padding: 30px;
+    border-radius: 12px;
+    margin-bottom: 40px;
+    border-left: 6px solid #0077b6; /* xanh biển */
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+/* màu cho tiêu đề mục lớn */
+.content-block h2 {
+    color: #005f73; /* xanh đậm */
+}
+
+/* màu cho tiêu đề mục con nếu có */
+.content-block h3 {
+    color: #2a9d8f; /* xanh lá */
+    margin-left: 20px;
+}
+
+/* nếu bạn dùng list trong nội dung */
+.content-block ul {
+    margin-left: 40px;
+    margin-top: 10px;
+}
+
+.content-block ul li {
+    margin-bottom: 8px;
+}
