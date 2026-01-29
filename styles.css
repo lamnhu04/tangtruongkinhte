@@ -227,3 +227,42 @@ footer {
     opacity: 1;
     transform: translateY(0);
 }
+/* ===== GROUP INFO ===== */
+.group {
+    padding: 100px 15%;
+    background: #111;
+    text-align: center;
+}
+
+.group-container {
+    max-width: 900px;
+    margin: auto;
+}
+
+.group-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.group-item {
+    background: #1a1a1a;
+    padding: 25px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.group-item:hover {
+    transform: translateY(-8px);
+}
+
+.group-item h3 {
+    color: #00ffd5;
+    margin-bottom: 10px;
+}
+
+.group-item p {
+    color: #ccc;
+    font-size: 16px;
+}
