@@ -475,3 +475,23 @@ nav ul li a:hover {
 
 .project-detail h2 {
     color: #005f
+/* ===== KHUNG NỘI DUNG (CONTENT-BLOCK) ===== */
+.content-block {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    margin-bottom: 40px;
+    border-left: 6px solid #0077b6;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+/* TIÊU ĐỀ MỤC */
+.content-block h2 {
+    color: #005f73;
+}
+
+/* TIÊU ĐỀ MỤC NHỎ */
+.content-block h3 {
+    color: #2a9d8f;
+    margin-left: 20px;
+}
