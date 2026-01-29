@@ -36,3 +36,13 @@ function type() {
     }
 }
 type();
+// SCROLL REVEAL CHO ABOUT
+document.addEventListener("DOMContentLoaded", function() {
+    let aboutSection = document.querySelector("#about .about-container");
+    window.addEventListener("scroll", function() {
+        let topPos = aboutSection.getBoundingClientRect().top;
+        if (topPos < window.innerHeight - 150) {
+            aboutSection.classList.add("active");
+        }
+    });
+});
