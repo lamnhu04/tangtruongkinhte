@@ -217,3 +217,13 @@ footer {
     margin: 15px 0;
     color: #ddd;
 }
+/* reveal cho about */
+.about-container {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 1s, transform 1s;
+}
+.about-container.active {
+    opacity: 1;
+    transform: translateY(0);
+}
