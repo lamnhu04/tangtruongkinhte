@@ -333,3 +333,49 @@ footer {
     line-height: 1.7;
     margin-top: 10px;
 }
+/* ===== PROJECT DETAIL (NỘI DUNG CHƯƠNG) ===== */
+.project-detail {
+    max-width: 900px;
+    margin: 80px auto;
+    padding: 0 25px;
+    color: #ddd;
+    line-height: 1.8;
+}
+
+.project-detail p {
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+.content-block {
+    background: #141414;
+    padding: 25px;
+    border-left: 4px solid #00ffd5;
+    margin-bottom: 30px;
+    border-radius: 6px;
+}
+
+.project-detail h1 {
+    font-size: 36px;
+    color: #00ffd5;
+    margin-bottom: 40px;
+}
+
+.project-detail h2 {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+.project-detail h3 {
+    font-size: 20px;
+    color: #00ffd5;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+.project-detail h3 + p {
+    margin-left: 20px;
+}
+
+.content-list {
+    ma
