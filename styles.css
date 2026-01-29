@@ -266,3 +266,45 @@ footer {
     color: #ccc;
     font-size: 16px;
 }
+/* ===== GROUP INFO ===== */
+.group {
+    padding: 100px 15%;
+    background: #111;
+    text-align: center;
+}
+
+.group-container {
+    max-width: 900px;
+    margin: auto;
+}
+
+.group-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.group-box {
+    background: #1a1a1a;
+    border: 1px solid #00ffd5;
+    padding: 30px 20px;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.group-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px rgba(0, 255, 213, 0.4);
+}
+
+.member-name {
+    color: #00ffd5;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.group-box p {
+    color: #ccc;
+    font-size: 16px;
+}
