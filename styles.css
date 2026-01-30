@@ -582,4 +582,27 @@ body {
 .level-3 li {
     color: #333;
 }
+/* ===== KHUNG GIỚI THIỆU (GIỐNG THÀNH VIÊN) ===== */
+.about-box {
+    background: #ffffff;
+    padding: 30px 35px;
+    border-radius: 12px;
+    border-left: 6px solid #0077b6;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    text-align: left; /* CĂN TRÁI */
+}
+
+/* tiêu đề trong khung giới thiệu */
+.about-box .section-title {
+    color: #005f73;
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+/* nội dung giới thiệu */
+.about-box p {
+    color: #333;
+    font-size: 17px;
+    line-height: 1.8;
+}
 
