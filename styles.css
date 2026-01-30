@@ -874,5 +874,29 @@ a {
 a:hover {
     color: #005f73;
 }
+header {
+    background: #ffffff !important;
+    border-bottom: 1px solid #e5e7eb;
+}
 
+nav a {
+    color: #000000 !important;
+}
 
+nav a:hover {
+    background: #e0f2fe;
+    color: #0077b6 !important;
+}
+.home {
+    background: #ffffff !important;
+    color: #000000 !important;
+}
+
+.home h1,
+.home p {
+    color: #000000 !important;
+}
+.section {
+    background: #ffffff !important;
+    color: #000000 !important;
+}
