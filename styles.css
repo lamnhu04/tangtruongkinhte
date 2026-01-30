@@ -859,3 +859,18 @@ body {
     margin-bottom: 25px !important;
     box-shadow: 0 10px 30px rgba(0,255,213,0.25) !important;
 }
+/* ===== FIX KHUNG TÀI LIỆU ===== */
+#docs .docs-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+}
+
+#docs .doc-box {
+    background: #ffffff !important;
+    color: #000000 !important;
+    border: 4px solid #00ffd5 !important;
+    padding: 25px !important;
+    border-radius: 16px !important;
+    box-shadow: 0 12px 35px rgba(0,255,213,0.35) !important;
+}
