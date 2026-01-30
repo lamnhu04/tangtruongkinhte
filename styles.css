@@ -525,4 +525,61 @@ nav ul li a:hover {
 .content-block ul li {
     margin-bottom: 8px;
 }
+/* ===== GHI ĐÈ MÀU KHUNG & CHỮ (NỀN SÁNG) ===== */
+
+/* Toàn bộ nền trang */
+body {
+    background: #f4f9fb;
+    color: #1f2933;
+}
+
+/* ===== KHUNG NỘI DUNG CHÍNH ===== */
+.content-block,
+.level-2,
+.level-3 {
+    background: #ffffff; /* nền trắng */
+    color: #1f2933;      /* chữ xám đậm */
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+/* ===== VIỀN THEO CẤP BẬC ===== */
+.level-2 {
+    border-left: 6px solid #0077b6; /* xanh dương */
+}
+
+.level-3 {
+    border-left: 4px solid #2a9d8f; /* xanh lá */
+}
+
+/* ===== TIÊU ĐỀ ===== */
+.content-block h2,
+.level-2 h2 {
+    color: #005f73; /* xanh đậm học thuật */
+}
+
+.content-block h3,
+.level-3 h3 {
+    color: #2a9d8f; /* xanh lá dịu */
+}
+
+/* ===== ĐOẠN VĂN ===== */
+.content-block p,
+.level-2 p,
+.level-3 p {
+    color: #333;
+    line-height: 1.8;
+}
+
+/* ===== LIST ===== */
+.content-block ul,
+.level-2 ul,
+.level-3 ul {
+    margin-left: 40px;
+}
+
+.content-block li,
+.level-2 li,
+.level-3 li {
+    color: #333;
+}
 
