@@ -637,5 +637,18 @@ body {
     box-shadow: 0 6px 18px rgba(0,0,0,0.08);
     text-align: left; /* CĂN TRÁI */
 }
+/* ===== FIX CĂN LỀ KHUNG GIỚI THIỆU ===== */
+.about {
+    text-align: left; /* bỏ căn giữa */
+}
+
+.about-container {
+    margin: 0;        /* bỏ margin auto */
+    max-width: 100%;
+}
+
+.about-box {
+    max-width: 900px; /* giới hạn độ rộng như content */
+}
 
 
