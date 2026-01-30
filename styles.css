@@ -779,3 +779,18 @@ body {
     line-height: 1.6;
     margin-bottom: 6px;
 }
+#docs.section {
+    align-items: flex-start;
+    padding-top: 80px;
+}
+.docs-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.docs-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
