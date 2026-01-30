@@ -679,5 +679,60 @@ body {
     font-size: 17px;
     line-height: 1.8;
 }
+/* ===== TÀI LIỆU ===== */
+.docs-container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.docs-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+/* KHUNG MỖI TÀI LIỆU */
+.doc-box {
+    background: #ffffff;
+    border-left: 6px solid #0077b6;
+    padding: 25px 25px 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left;
+}
+
+.doc-box:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 26px rgba(0,0,0,0.12);
+}
+
+/* TIÊU ĐỀ TÀI LIỆU */
+.doc-box h3 {
+    color: #005f73;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* MÔ TẢ */
+.doc-box p {
+    color: #333;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* LINK */
+.doc-link {
+    display: inline-block;
+    color: #0077b6;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.doc-link:hover {
+    text-decoration: underline;
+}
 
 
