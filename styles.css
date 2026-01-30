@@ -650,5 +650,34 @@ body {
 .about-box {
     max-width: 900px; /* giới hạn độ rộng như content */
 }
+/* ===== FIX CỨNG PHẦN GIỚI THIỆU ===== */
+#about.section {
+    justify-content: flex-start; /* KHÔNG căn giữa nữa */
+}
+
+#about .about-container {
+    width: 100%;
+    margin: 0;
+}
+/* ===== KHUNG GIỚI THIỆU ===== */
+.about-box {
+    background: #ffffff;
+    border-left: 6px solid #0077b6;
+    padding: 30px 35px;
+    border-radius: 12px;
+    box-shadow: 0 8px 22px rgba(0,0,0,0.1);
+    max-width: 1000px;
+    text-align: left;
+}
+.about-box .section-title {
+    color: #005f73;
+    text-align: left;
+}
+
+.about-box .about-desc {
+    color: #333;
+    font-size: 17px;
+    line-height: 1.8;
+}
 
 
