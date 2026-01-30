@@ -605,4 +605,37 @@ body {
     font-size: 17px;
     line-height: 1.8;
 }
+/* ===== KHUNG GIỚI THIỆU ===== */
+.about-box {
+    background: #ffffff;
+    padding: 30px 35px;
+    border-radius: 12px;
+    border-left: 6px solid #0077b6;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    text-align: left; /* CĂN TRÁI */
+}
+
+/* TIÊU ĐỀ GIỚI THIỆU */
+.about-box .section-title {
+    color: #005f73;
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+/* NỘI DUNG GIỚI THIỆU */
+.about-box .about-desc {
+    color: #333;
+    font-size: 17px;
+    line-height: 1.8;
+}
+/* ===== KHUNG GIỚI THIỆU ===== */
+.about-box {
+    background: #ffffff;
+    padding: 30px 35px;
+    border-radius: 12px;
+    border-left: 6px solid #0077b6;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    text-align: left; /* CĂN TRÁI */
+}
+
 
