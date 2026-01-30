@@ -794,3 +794,39 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 30px;
 }
+/* ===== FIX HIỂN THỊ KHUNG TÀI LIỆU ===== */
+#docs.section {
+    display: block;          /* TẮT flex */
+    padding-top: 120px;
+}
+
+.docs-container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.docs-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+/* KHUNG TÀI LIỆU */
+.doc-box {
+    background: #ffffff;
+    border: 2px solid #0077b6;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+/* CHỮ */
+.doc-box h3 {
+    color: #005f73;
+    margin-bottom: 10px;
+}
+
+.doc-box p {
+    color: #333;
+    line-height: 1.6;
+}
