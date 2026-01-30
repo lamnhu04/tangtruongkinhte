@@ -1,4 +1,3 @@
-/* ===== RESET CƠ BẢN ===== */
 * {
     margin: 0;
     padding: 0;
@@ -6,107 +5,524 @@
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #f4f8fc; /* trắng xanh nhạt */
-    color: #1f2933;
-    line-height: 1.7;
+    font-family: 'Poppins', sans-serif;
+    background: #0b0b0b;
+    color: #fff;
+    overflow-x: hidden;
 }
 
-/* ===== HEADER / MENU ===== */
+/* LOADER */
+#loader {
+    position: fixed;
+    inset: 0;
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+#loader span {
+    font-size: 32px;
+    letter-spacing: 6px;
+    animation: blink 1.2s infinite;
+}
+
+@keyframes blink {
+    50% { opacity: 0.3; }
+}
+
+/* HEADER */
 header {
-    background: linear-gradient(90deg, #0d47a1, #1976d2);
-    color: white;
-    padding: 15px 40px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 20px 60px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background: rgba(0,0,0,0.4);
+    backdrop-filter: blur(8px);
+    z-index: 1000;
 }
 
-header .logo {
-    font-size: 24px;
-    font-weight: bold;
-    letter-spacing: 2px;
+.logo {
+    font-weight: 700;
+    letter-spacing: 3px;
 }
 
-header nav a {
-    color: white;
+nav a {
+    color: #fff;
     text-decoration: none;
-    margin-left: 20px;
-    font-weight: 500;
+    margin-left: 25px;
+    opacity: 0.7;
 }
 
-header nav a:hover {
-    text-decoration: underline;
+nav a:hover {
+    opacity: 1;
 }
 
-/* ===== TRANG CHỦ ===== */
-.home {
-    height: 100vh;
-    background: linear-gradient(135deg, #0d47a1, #42a5f5);
-    color: white;
+/* SECTIONS */
+.section {
+    min-height: 100vh;
+    padding: 120px 15%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.home {
     align-items: center;
     text-align: center;
 }
 
 .home h1 {
-    font-size: 60px;
-    letter-spacing: 6px;
-    margin-bottom: 15px;
+    font-size: 80px;
+    letter-spacing: 10px;
 }
 
-.home p {
-    font-size: 20px;
-    opacity: 0.95;
+/* PROJECTS */
+.project-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    gap: 30px;
 }
 
-/* ===== TIÊU ĐỀ CHƯƠNG ===== */
-h1 {
-    margin: 40px auto 20px;
+.project {
+    background: #141414;
+    padding: 30px;
+    border-radius: 14px;
+    transition: 0.4s;
+}
+
+.project:hover {
+    transform: translateY(-12px);
+    background: #1f1f1f;
+}
+
+/* REVEAL */
+.reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: 1s;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* FOOTER */
+footer {
     text-align: center;
-    color: #0d47a1;
+    padding: 30px;
+    opacity: 0.5;
 }
 
-/* ===== KHỐI NỘI DUNG CHÍNH ===== */
-.content-block {
-    background: white;
-    margin: 30px auto;
-    padding: 25px 30px;
-    width: 85%;
-    max-width: 1000px;
-    border-left: 6px solid #1976d2;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+/* MOBILE */
+@media(max-width:768px) {
+    header {
+        padding: 20px;
+    }
+
+    .home h1 {
+        font-size: 46px;
+    }
+}
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 25px;
+    border-radius: 30px;
+    background: #00ffd5;
+    color: #000;
+    text-decoration: none;
+    font-weight: 600;
+}
+/* ===== ABOUT ===== */
+.about {
+    padding: 100px 15%;
+    background: #0f0f0f;
+    text-align: center;
 }
 
-/* ===== TIÊU ĐỀ CẤP 2 ===== */
-.content-block h2 {
-    color: #0d47a1;
+.about-container {
+    max-width: 800px;
+    margin: auto;
+}
+
+.section-title {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #00ffd5;
+    text-transform: uppercase;
+}
+
+.about-desc {
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 15px 0;
+    color: #ddd;
+}
+/* ===== ABOUT ===== */
+.about {
+    padding: 100px 15%;
+    background: #0f0f0f;
+    text-align: center;
+}
+
+.about-container {
+    max-width: 800px;
+    margin: auto;
+}
+
+.section-title {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #00ffd5;
+    text-transform: uppercase;
+}
+
+.about-desc {
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 15px 0;
+    color: #ddd;
+}
+/* ===== ABOUT ===== */
+.about {
+    padding: 100px 15%;
+    background: #0f0f0f;
+    text-align: center;
+}
+
+.about-container {
+    max-width: 800px;
+    margin: auto;
+}
+
+.section-title {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #00ffd5;
+    text-transform: uppercase;
+}
+
+.about-desc {
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 15px 0;
+    color: #ddd;
+}
+/* reveal cho about */
+.about-container {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 1s, transform 1s;
+}
+.about-container.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+/* ===== GROUP INFO ===== */
+.group {
+    padding: 100px 15%;
+    background: #111;
+    text-align: center;
+}
+
+.group-container {
+    max-width: 900px;
+    margin: auto;
+}
+
+.group-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.group-item {
+    background: #1a1a1a;
+    padding: 25px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.group-item:hover {
+    transform: translateY(-8px);
+}
+
+.group-item h3 {
+    color: #00ffd5;
     margin-bottom: 10px;
 }
 
-/* ===== TIÊU ĐỀ CẤP 3 ===== */
-.content-block h3 {
-    color: #1565c0;
-    margin-top: 15px;
-    margin-bottom: 5px;
-    padding-left: 10px;
-    border-left: 4px solid #64b5f6;
+.group-item p {
+    color: #ccc;
+    font-size: 16px;
 }
-
-/* ===== ĐOẠN VĂN ===== */
-.content-block p {
-    margin-left: 10px;
-    margin-top: 5px;
-}
-
-/* ===== FOOTER ===== */
-footer {
-    background-color: #0d47a1;
-    color: white;
+/* ===== GROUP INFO ===== */
+.group {
+    padding: 100px 15%;
+    background: #111;
     text-align: center;
-    padding: 15px;
-    margin-top: 50px;
 }
+
+.group-container {
+    max-width: 900px;
+    margin: auto;
+}
+
+.group-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.group-box {
+    background: #1a1a1a;
+    border: 1px solid #00ffd5;
+    padding: 30px 20px;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.group-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px rgba(0, 255, 213, 0.4);
+}
+
+.member-name {
+    color: #00ffd5;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.group-box p {
+    color: #ccc;
+    font-size: 16px;
+}
+/* ===== PROJECT DETAIL ===== */
+.project-detail {
+    max-width: 900px;
+    margin: 80px auto;
+    padding: 0 20px;
+    color: #ddd;
+}
+
+.project-detail h1 {
+    font-size: 36px;
+    color: #00ffd5;
+    margin-bottom: 30px;
+}
+
+.project-detail h2 {
+    font-size: 24px;
+    color: #fff;
+    margin-top: 30px;
+}
+
+.project-detail p {
+    font-size: 18px;
+    line-height: 1.7;
+    margin-top: 10px;
+}
+/* ===== PROJECT DETAIL (NỘI DUNG CHƯƠNG) ===== */
+.project-detail {
+    max-width: 900px;
+    margin: 80px auto;
+    padding: 0 25px;
+    color: #ddd;
+    line-height: 1.8;
+}
+
+.project-detail p {
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+.content-block {
+    background: #141414;
+    padding: 25px;
+    border-left: 4px solid #00ffd5;
+    margin-bottom: 30px;
+    border-radius: 6px;
+}
+
+.project-detail h1 {
+    font-size: 36px;
+    color: #00ffd5;
+    margin-bottom: 40px;
+}
+
+.project-detail h2 {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+.project-detail h3 {
+    font-size: 20px;
+    color: #00ffd5;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+.project-detail h3 + p {
+    margin-left: 20px;
+}
+
+.content-list {
+    ma
+/* ===== KHUNG THEO CẤP BẬC (GIỐNG KTVM) ===== */
+
+/* MỤC LỚN (1.1 – 1.5) */
+.level-2 {
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    border-left: 6px solid #00ffd5;
+}
+
+/* MỤC NHỎ (1.1.1 – 1.5.5) */
+.level-3 {
+    background: #111;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px 0 20px 30px;
+    border-left: 4px solid #ff9800;
+}
+
+/* TIÊU ĐỀ */
+.level-2 h2 {
+    color: #00ffd5;
+}
+
+.level-3 h3 {
+    color: #ff9800;
+}
+/* ===== BODY ===== */
+body {
+    background: #f4f9fb;
+    color: #333;
+}
+
+/* ===== HEADER / MENU ===== */
+header {
+    background: #ffffff;
+    border-bottom: 2px solid #e0f2fe;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 25px;
+}
+
+nav .logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #0077b6;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #005f73;
+    font-weight: 500;
+    padding: 6px 10px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    background: #e0f2fe;
+    color: #0077b6;
+}
+
+/* ===== NỘI DUNG CHƯƠNG ===== */
+.project-detail {
+    max-width: 1000px;
+    margin: 80px auto;
+    padding: 0 25px;
+    line-height: 1.8;
+}
+
+.project-detail h1 {
+    color: #0077b6;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.project-detail h2 {
+    color: #005f
+/* ===== KHUNG NỘI DUNG (CONTENT-BLOCK) ===== */
+.content-block {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    margin-bottom: 40px;
+    border-left: 6px solid #0077b6;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+/* TIÊU ĐỀ MỤC */
+.content-block h2 {
+    color: #005f73;
+}
+
+/* TIÊU ĐỀ MỤC NHỎ */
+.content-block h3 {
+    color: #2a9d8f;
+    margin-left: 20px;
+}
+/* ===== KHUNG CHO CONTENT-BLOCK ===== */
+.content-block {
+    background: #ffffff; /* nền trắng */
+    padding: 30px;
+    border-radius: 12px;
+    margin-bottom: 40px;
+    border-left: 6px solid #0077b6; /* xanh biển */
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+/* màu cho tiêu đề mục lớn */
+.content-block h2 {
+    color: #005f73; /* xanh đậm */
+}
+
+/* màu cho tiêu đề mục con nếu có */
+.content-block h3 {
+    color: #2a9d8f; /* xanh lá */
+    margin-left: 20px;
+}
+
+/* nếu bạn dùng list trong nội dung */
+.content-block ul {
+    margin-left: 40px;
+    margin-top: 10px;
+}
+
+.content-block ul li {
+    margin-bottom: 8px;
+}
+
