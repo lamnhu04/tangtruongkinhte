@@ -734,5 +734,50 @@ body {
 .doc-link:hover {
     text-decoration: underline;
 }
+/* ===== TÀI LIỆU THAM KHẢO ===== */
+#docs {
+    display: block;
+    background: #f4f9fb;
+}
+
+.docs-container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.docs-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+/* MỖI TÀI LIỆU = 1 KHUNG RIÊNG */
+.doc-box {
+    background: #ffffff;
+    padding: 25px 30px;
+    border-radius: 12px;
+    border-left: 6px solid #0077b6;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+.doc-box:hover {
+    transform: translateY(-8px);
+}
+
+/* TIÊU ĐỀ TÀI LIỆU */
+.doc-box h3 {
+    color: #005f73;
+    margin-bottom: 12px;
+}
+
+/* NỘI DUNG */
+.doc-box p {
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 6px;
+}
 
 
