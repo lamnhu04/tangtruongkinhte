@@ -654,6 +654,61 @@ nav ul li a:hover {
     color: #000 !important;
     opacity: 1 !important;
 }
+/* ===== KHUNG ===== */
+.content-block {
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    margin-bottom: 40px;
+    border-left: 6px solid #0077b6;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+/* ===== TIÊU ĐỀ BẤM ===== */
+.toggle-btn {
+    cursor: pointer;
+    color: #005f73;
+    font-size: 24px;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* dấu + / - */
+.toggle-btn .arrow {
+    font-size: 28px;
+    transition: transform 0.3s;
+}
+
+/* ===== NỘI DUNG ẨN ===== */
+.toggle-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+    margin-top: 15px;
+}
+
+/* khi mở */
+.content-block.active .toggle-content {
+    max-height: 3000px;
+}
+
+/* xoay dấu + */
+.content-block.active .arrow {
+    transform: rotate(45deg);
+}
+
+/* ===== CHỮ ĐEN RÕ ===== */
+.toggle-content h3 {
+    color: #000;
+    margin-top: 15px;
+}
+
+.toggle-content p {
+    color: #000;
+    line-height: 1.8;
+}
 
 
 
