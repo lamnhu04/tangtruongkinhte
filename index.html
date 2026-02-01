@@ -137,46 +137,41 @@ document.addEventListener("DOMContentLoaded", function () {
 </section>
 
 <!-- THUẬT NGỮ -->
-<section id="terms" class="section">
-  <div class="project-detail">
+<div class="content-block">
 
-    <div class="content-block">
-      <h3 class="section-title toggle-btn">Thuật ngữ</h3>
+  <!-- NÚT BẤM -->
+  <h3 class="toggle-btn section-title">Thuật ngữ</h3>
 
-      <div class="toggle-content">
-        <h3>Kinh tế vĩ mô</h3>
-        <p>
-          Ngành kinh tế học nghiên cứu các hiện tượng tổng thể
-          của nền kinh tế như tăng trưởng, lạm phát, thất nghiệp
-          và chính sách kinh tế.
-        </p>
+  <!-- NỘI DUNG ẨN -->
+  <div class="toggle-content">
 
-        <h3>Hàm sản xuất tổng hợp</h3>
-        <p>
-          Mối quan hệ giữa các yếu tố đầu vào
-          (lao động, vốn, công nghệ) và sản lượng của nền kinh tế.
-        </p>
+    <h3>Kinh tế vĩ mô</h3>
+    <p>
+      Ngành kinh tế học nghiên cứu các hiện tượng tổng thể
+      của nền kinh tế như tăng trưởng, lạm phát, thất nghiệp
+      và chính sách kinh tế.
+    </p>
 
-        <h3>Chính sách tài khóa</h3>
-        <p>
-          Chính sách của Chính phủ thông qua chi tiêu công
-          và thuế nhằm tác động đến hoạt động kinh tế.
-        </p>
+    <h3>Hàm sản xuất tổng hợp</h3>
+    <p>
+      Mối quan hệ giữa các yếu tố đầu vào
+      (lao động, vốn, công nghệ) và sản lượng của nền kinh tế.
+    </p>
 
-        <h3>R&D</h3>
-        <p>
-          Research and Development – Nghiên cứu và Phát triển.
-        </p>
+    <h3>Chính sách tài khóa</h3>
+    <p>
+      Chính sách của Chính phủ thông qua chi tiêu công
+      và thuế nhằm tác động đến hoạt động kinh tế.
+    </p>
 
-        <h3>TFP</h3>
-        <p>
-          Total Factor Productivity – Năng suất tổng hợp.
-        </p>
-      </div>
-    </div>
+    <h3>R&D</h3>
+    <p>Research and Development – Nghiên cứu và Phát triển.</p>
+
+    <h3>TFP</h3>
+    <p>Total Factor Productivity – Năng suất nhân tố tổng hợp.</p>
 
   </div>
-</section>
+</div>
 
 
 <!-- TÀI LIỆU -->
@@ -240,6 +235,13 @@ window.addEventListener('scroll', () => {
     if (top < window.innerHeight - 100) {
       el.classList.add('active');
     }
+  });
+});
+</script>
+<script>
+document.querySelectorAll(".toggle-btn").forEach(btn => {
+  btn.addEventListener("click", () => {
+    btn.parentElement.classList.toggle("active");
   });
 });
 </script>
