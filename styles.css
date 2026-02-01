@@ -482,13 +482,6 @@ nav ul li a:hover {
 .content-block ul li {
     margin-bottom: 8px;
 }
-/* ===== GHI ĐÈ MÀU KHUNG & CHỮ (NỀN SÁNG) ===== */
-
-/* Toàn bộ nền trang */
-body {
-    background: #f4f9fb;
-    color: #1f2933;
-}
 
 /* ===== KHUNG NỘI DUNG CHÍNH ===== */
 .content-block,
@@ -539,96 +532,30 @@ body {
 .level-3 li {
     color: #333;
 }
-/* ===== KHUNG GIỚI THIỆU (GIỐNG THÀNH VIÊN) ===== */
-.about-box {
-    background: #ffffff;
-    padding: 30px 35px;
-    border-radius: 12px;
-    border-left: 6px solid #0077b6;
-    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
-    text-align: left; /* CĂN TRÁI */
-}
 
-/* tiêu đề trong khung giới thiệu */
-.about-box .section-title {
-    color: #005f73;
-    text-align: left;
-    margin-bottom: 15px;
-}
 
-/* nội dung giới thiệu */
-.about-box p {
-    color: #333;
-    font-size: 17px;
-    line-height: 1.8;
-}
 /* ===== KHUNG GIỚI THIỆU ===== */
-.about-box {
-    background: #ffffff;
-    padding: 30px 35px;
-    border-radius: 12px;
-    border-left: 6px solid #0077b6;
-    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
-    text-align: left; /* CĂN TRÁI */
-}
-
-/* TIÊU ĐỀ GIỚI THIỆU */
-.about-box .section-title {
-    color: #005f73;
-    text-align: left;
-    margin-bottom: 15px;
-}
-
-/* NỘI DUNG GIỚI THIỆU */
-.about-box .about-desc {
-    color: #333;
-    font-size: 17px;
-    line-height: 1.8;
-}
-/* ===== KHUNG GIỚI THIỆU ===== */
-.about-box {
-    background: #ffffff;
-    padding: 30px 35px;
-    border-radius: 12px;
-    border-left: 6px solid #0077b6;
-    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
-    text-align: left; /* CĂN TRÁI */
-}
-/* ===== FIX CĂN LỀ KHUNG GIỚI THIỆU ===== */
 .about {
-    text-align: left; /* bỏ căn giữa */
+    text-align: left;
 }
 
 .about-container {
-    margin: 0;        /* bỏ margin auto */
-    max-width: 100%;
-}
-
-.about-box {
-    max-width: 900px; /* giới hạn độ rộng như content */
-}
-/* ===== FIX CỨNG PHẦN GIỚI THIỆU ===== */
-#about.section {
-    justify-content: flex-start; /* KHÔNG căn giữa nữa */
-}
-
-#about .about-container {
     width: 100%;
-    margin: 0;
 }
-/* ===== KHUNG GIỚI THIỆU ===== */
+
 .about-box {
     background: #ffffff;
     border-left: 6px solid #0077b6;
     padding: 30px 35px;
     border-radius: 12px;
     box-shadow: 0 8px 22px rgba(0,0,0,0.1);
-    max-width: 1000px;
+    max-width: 900px;
     text-align: left;
 }
+
 .about-box .section-title {
     color: #005f73;
-    text-align: left;
+    margin-bottom: 15px;
 }
 
 .about-box .about-desc {
@@ -636,177 +563,27 @@ body {
     font-size: 17px;
     line-height: 1.8;
 }
-/* ===== TÀI LIỆU ===== */
-.docs-container {
+
+
+
+/* ===== TÀI LIỆU THAM KHẢO ===== */
+#docs {
+    background-color: #f4f9fb;
+    border: 2px solid #ddd;
+    border-radius: 12px;
+    padding: 40px;
     max-width: 1100px;
-    margin: auto;
+    margin: 40px auto;
+}
+
+.docs-container {
+    width: 100%;
 }
 
 .docs-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 30px;
-    margin-top: 40px;
-}
-
-/* KHUNG MỖI TÀI LIỆU */
-.doc-box {
-    background: #ffffff;
-    border-left: 6px solid #0077b6;
-    padding: 25px 25px 30px;
-    border-radius: 12px;
-    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    text-align: left;
-}
-
-.doc-box:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 10px 26px rgba(0,0,0,0.12);
-}
-
-/* TIÊU ĐỀ TÀI LIỆU */
-.doc-box h3 {
-    color: #005f73;
-    font-size: 20px;
-    margin-bottom: 10px;
-}
-
-/* MÔ TẢ */
-.doc-box p {
-    color: #333;
-    font-size: 16px;
-    line-height: 1.6;
-    margin-bottom: 15px;
-}
-
-/* LINK */
-.doc-link {
-    display: inline-block;
-    color: #0077b6;
-    font-weight: 600;
-    text-decoration: none;
-}
-
-.doc-link:hover {
-    text-decoration: underline;
-}
-/* ===== TÀI LIỆU THAM KHẢO ===== */
-#docs {
-    display: block;
-    background: #f4f9fb;
-}
-
-.docs-container {
-    max-width: 1000px;
-    margin: auto;
-}
-
-.docs-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 30px;
-    margin-top: 40px;
-}
-
-/* MỖI TÀI LIỆU = 1 KHUNG RIÊNG */
-.doc-box {
-    background: #ffffff;
-    padding: 25px 30px;
-    border-radius: 12px;
-    border-left: 6px solid #0077b6;
-    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
-    text-align: left;
-    transition: transform 0.3s ease;
-}
-
-.doc-box:hover {
-    transform: translateY(-8px);
-}
-
-/* TIÊU ĐỀ TÀI LIỆU */
-.doc-box h3 {
-    color: #005f73;
-    margin-bottom: 12px;
-}
-
-/* NỘI DUNG */
-.doc-box p {
-    color: #333;
-    line-height: 1.6;
-    margin-bottom: 6px;
-}
-#docs.section {
-    align-items: flex-start;
-    padding-top: 80px;
-}
-.docs-container {
-    width: 100%;
-    max-width: 1200px;
-    margin: auto;
-}
-
-.docs-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 30px;
-}
-/* ===== FIX HIỂN THỊ KHUNG TÀI LIỆU ===== */
-#docs.section {
-    display: block;          /* TẮT flex */
-    padding-top: 120px;
-}
-
-.docs-container {
-    max-width: 1100px;
-    margin: auto;
-}
-
-.docs-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-}
-
-/* KHUNG TÀI LIỆU */
-.doc-box {
-    background: #ffffff;
-    border: 2px solid #0077b6;
-    padding: 25px;
-    border-radius: 12px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
-}
-
-/* CHỮ */
-.doc-box h3 {
-    color: #005f73;
-    margin-bottom: 10px;
-}
-
-.doc-box p {
-    color: #333;
-    line-height: 1.6;
-}
-.doc-box img {
-    width: 100%;
-    max-width: 300px;
-    display: block;
-    margin: 10px auto;
-    border-radius: 8px;
-}
-#docs {
-    background-color: #f9f9f9;
-    border: 2px solid #ddd;
-    border-radius: 12px;
-    padding: 30px;
-    max-width: 900px;
-    margin: 40px auto;
-}
-
-.docs-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
 }
 
 .doc-box {
@@ -815,6 +592,21 @@ body {
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.doc-box h3 {
+    color: #005f73;
+    margin-bottom: 10px;
+}
+
+.doc-box p {
+    color: #333;
+    line-height: 1.6;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 30px;
 }
 
 .section-title {
