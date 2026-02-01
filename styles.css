@@ -157,8 +157,7 @@ footer {
 .about-container {
     max-width: 800px;
     margin: auto;
-    opacity: 0;
-    transform: translateY(40px);
+    opacity: 1;
     transition: opacity 1s, transform 1s;
 }
 
