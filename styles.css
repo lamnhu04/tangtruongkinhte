@@ -305,12 +305,22 @@ footer {
 }
 
 .content-block {
-    background: #141414;
-    padding: 25px;
-    border-left: 4px solid #00ffd5;
-    margin-bottom: 30px;
-    border-radius: 6px;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    margin-bottom: 40px;
+    border-left: 6px solid #0077b6;    /* xanh dương */
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
 }
+
+.content-block h2 {
+    color: #005f73;
+}
+
+.content-block h3 {
+    color: #2a9d8f;
+}
+
 
 .project-detail h1 {
     font-size: 36px;
