@@ -150,91 +150,38 @@ footer {
 /* ===== ABOUT ===== */
 .about {
     padding: 100px 15%;
-    background: #0f0f0f;
+    background: #ffffff;          /* nền trắng */
     text-align: left;
 }
 
 .about-container {
     max-width: 800px;
     margin: auto;
-}
-
-.section-title {
-    font-size: 36px;
-    font-weight: 700;
-    margin-bottom: 20px;
-    color: #00ffd5;
-    text-transform: uppercase;
-}
-
-.about-desc {
-    font-size: 18px;
-    line-height: 1.6;
-    margin: 15px 0;
-    color: #ddd;
-}
-/* ===== ABOUT ===== */
-.about {
-    padding: 100px 15%;
-    background: #0f0f0f;
-    text-align: center;
-}
-
-.about-container {
-    max-width: 800px;
-    margin: auto;
-}
-
-.section-title {
-    font-size: 36px;
-    font-weight: 700;
-    margin-bottom: 20px;
-    color: #00ffd5;
-    text-transform: uppercase;
-}
-
-.about-desc {
-    font-size: 18px;
-    line-height: 1.6;
-    margin: 15px 0;
-    color: #ddd;
-}
-/* ===== ABOUT ===== */
-.about {
-    padding: 100px 15%;
-    background: #0f0f0f;
-    text-align: left;
-}
-
-.about-container {
-    max-width: 800px;
-    margin: auto;
-}
-
-.section-title {
-    font-size: 36px;
-    font-weight: 700;
-    margin-bottom: 20px;
-    color: #00ffd5;
-    text-transform: uppercase;
-}
-
-.about-desc {
-    font-size: 18px;
-    line-height: 1.6;
-    margin: 15px 0;
-    color: #ddd;
-}
-/* reveal cho about */
-.about-container {
     opacity: 0;
     transform: translateY(40px);
     transition: opacity 1s, transform 1s;
 }
+
 .about-container.active {
     opacity: 1;
     transform: translateY(0);
 }
+
+.section-title {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #1e90ff;               /* xanh chủ đạo */
+    text-transform: uppercase;
+}
+
+.about-desc {
+    font-size: 18px;
+    line-height: 1.7;
+    margin: 15px 0;
+    color: #0b2e4a;               /* chữ xanh đậm */
+}
+
 /* ===== GROUP INFO ===== */
 .group {
     padding: 100px 15%;
@@ -277,7 +224,7 @@ footer {
 /* ===== GROUP INFO ===== */
 .group {
     padding: 100px 15%;
-    background: #111;
+    background: #f4f8fb;          /* trắng xanh nhạt */
     text-align: center;
 }
 
@@ -294,28 +241,30 @@ footer {
 }
 
 .group-box {
-    background: #1a1a1a;
-    border: 1px solid #00ffd5;
+    background: #ffffff;
+    border: 1px solid #dbe7f1;
     padding: 30px 20px;
-    border-radius: 12px;
+    border-radius: 14px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .group-box:hover {
     transform: translateY(-10px);
-    box-shadow: 0 0 20px rgba(0, 255, 213, 0.4);
+    box-shadow: 0 12px 30px rgba(30, 144, 255, 0.25);
 }
 
 .member-name {
-    color: #00ffd5;
+    color: #1e90ff;
     font-size: 20px;
     margin-bottom: 10px;
+    font-weight: 600;
 }
 
 .group-box p {
-    color: #ccc;
+    color: #0b2e4a;
     font-size: 16px;
 }
+
 /* ===== PROJECT DETAIL ===== */
 .project-detail {
     max-width: 900px;
