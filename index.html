@@ -239,33 +239,22 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 <footer>© 2026 KTVM</footer>
+<script>
+document.querySelectorAll(".toggle-btn").forEach(btn => {
+  btn.addEventListener("click", () => {
+    const block = btn.closest(".content-block");
 
-<script src="script.js"></script>
-    <script>
-const reveals = document.querySelectorAll('.reveal');
-window.addEventListener('scroll', () => {
-  reveals.forEach(el => {
-    const top = el.getBoundingClientRect().top;
-    if (top < window.innerHeight - 100) {
-      el.classList.add('active');
-    }
+    // đóng các block khác (giống chương 1–2–3)
+    document.querySelectorAll(".content-block").forEach(item => {
+      if (item !== block) item.classList.remove("active");
+    });
+
+    block.classList.toggle("active");
   });
 });
 </script>
-<script>
-document.querySelectorAll(".toggle-btn").forEach(btn => {
-  btn.addEventListener("click", () => {
-    btn.parentElement.classList.toggle("active");
-  });
-});
-</script>
-<script>
-document.querySelectorAll(".toggle-btn").forEach(btn => {
-  btn.addEventListener("click", () => {
-    btn.parentElement.classList.toggle("active");
-  });
-});
-</script>
+
+
 
 </body>
 </html>
