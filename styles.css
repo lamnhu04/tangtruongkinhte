@@ -6,8 +6,8 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background: #0b0b0b;
-    color: #fff;
+    background: #f4f8fb;      /* nền trắng xanh nhạt */
+    color: #0b2e4a;           /* chữ xanh đậm */
     overflow-x: hidden;
 }
 
@@ -41,7 +41,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: rgba(0,0,0,0.4);
+    background: rgba(255,255,255,0.85);
     backdrop-filter: blur(8px);
     z-index: 1000;
 }
@@ -52,18 +52,20 @@ header {
 }
 
 nav a {
-    color: #fff;
+    color: #0b2e4a;
     text-decoration: none;
     margin-left: 25px;
     opacity: 0.7;
 }
 
 nav a:hover {
+    color: #1e90ff;
     opacity: 1;
 }
 
 /* SECTIONS */
 .section {
+    background: #ffffff;
     min-height: 100vh;
     padding: 120px 15%;
     display: flex;
@@ -89,15 +91,17 @@ nav a:hover {
 }
 
 .project {
-    background: #141414;
+    background: #ffffff;
     padding: 30px;
     border-radius: 14px;
+    border: 1px solid #dbe7f1;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
     transition: 0.4s;
 }
 
 .project:hover {
-    transform: translateY(-12px);
-    background: #1f1f1f;
+    transform: translateY(-10px);
+    box-shadow: 0 12px 30px rgba(30,144,255,0.2);
 }
 
 /* REVEAL */
@@ -117,6 +121,7 @@ footer {
     text-align: center;
     padding: 30px;
     opacity: 0.5;
+    color: #6c8aa6;
 }
 
 /* MOBILE */
@@ -134,10 +139,13 @@ footer {
     margin-top: 15px;
     padding: 10px 25px;
     border-radius: 30px;
-    background: #00ffd5;
-    color: #000;
+    background: #1e90ff;
+    color: #fff;
     text-decoration: none;
     font-weight: 600;
+}
+.btn:hover {
+    background: #0b5ed7;
 }
 /* ===== ABOUT ===== */
 .about {
