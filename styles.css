@@ -624,6 +624,36 @@ nav ul li a:hover {
     margin-bottom: 30px;
 }
 
+.content-block {
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    margin-bottom: 40px;
+    border-left: 6px solid #0077b6;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+.toggle-btn {
+    cursor: pointer;
+    color: #005f73;
+    font-weight: 700;
+}
+
+.toggle-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+}
+
+.content-block.active .toggle-content {
+    max-height: 9999px;
+}
+
+.content-block p,
+.content-block h3 {
+    color: #000 !important;
+    opacity: 1 !important;
+}
 
 
 
