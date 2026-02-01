@@ -463,14 +463,7 @@ nav ul li a:hover {
     margin-left: 20px;
 }
 /* ===== KHUNG CHO CONTENT-BLOCK ===== */
-.content-block {
-    background: #ffffff; /* nền trắng */
-    padding: 30px;
-    border-radius: 12px;
-    margin-bottom: 40px;
-    border-left: 6px solid #0077b6; /* xanh biển */
-    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
-}
+
 
 /* màu cho tiêu đề mục lớn */
 .content-block h2 {
@@ -624,14 +617,7 @@ nav ul li a:hover {
     margin-bottom: 30px;
 }
 
-.content-block {
-    background: #fff;
-    padding: 30px;
-    border-radius: 12px;
-    margin-bottom: 40px;
-    border-left: 6px solid #0077b6;
-    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
-}
+
 
 .toggle-btn {
     cursor: pointer;
@@ -655,14 +641,6 @@ nav ul li a:hover {
     opacity: 1 !important;
 }
 /* ===== KHUNG ===== */
-.content-block {
-    background: #fff;
-    padding: 30px;
-    border-radius: 12px;
-    margin-bottom: 40px;
-    border-left: 6px solid #0077b6;
-    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
-}
 
 /* ===== TIÊU ĐỀ BẤM ===== */
 .toggle-btn {
